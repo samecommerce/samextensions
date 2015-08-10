@@ -1,0 +1,335 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col2-right-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                    <div class="col-main" style="width: 100%;">
+                        <div class="std">
+                            <div class="widget widget-new-products">
+                                <div class="widget-title">
+                                    <p class="our_location">
+                                        <a href="#">Home</a><span>/</span><a href="#">Magento Extensions</a>
+                                    </p>
+                                </div>
+                                <div class="widget-products">
+                                    <ul class="product-grid">
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/m/a/magento-advanced-sorting-extension.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/i/n/infinite_scrolling_magento_2.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+
+                                                <p class="old-price">
+                                                    <span class="price-label">Regular Price:</span>
+                                                    <span class="price">€59.00</span>
+                                                </p>
+
+                                                <p class="special-price">
+                                                    <span class="price-label">Special Price:</span>
+                                                    <span class="price">€49.00</span>
+                                                </p>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/f/i/filter_specific_content_magento_4.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/m/a/magento-shop-by-brand-splash-attribute-page.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+
+                                                <p class="old-price">
+                                                    <span class="price-label">Regular Price:</span>
+                                                    <span class="price">€59.00</span>
+                                                </p>
+
+                                                <p class="special-price">
+                                                    <span class="price-label">Special Price:</span>
+                                                    <span class="price">€49.00</span>
+                                                </p>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/i/-/i-shop-by-special-price.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/m/a/magento-advanced-sorting-extension.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/i/n/infinite_scrolling_magento_2.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+
+                                                <p class="old-price">
+                                                    <span class="price-label">Regular Price:</span>
+                                                    <span class="price">€59.00</span>
+                                                </p>
+
+                                                <p class="special-price">
+                                                    <span class="price-label">Special Price:</span>
+                                                    <span class="price">€49.00</span>
+                                                </p>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/f/i/filter_specific_content_magento_4.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/m/a/magento-shop-by-brand-splash-attribute-page.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+
+                                                <p class="old-price">
+                                                    <span class="price-label">Regular Price:</span>
+                                                    <span class="price">€59.00</span>
+                                                </p>
+
+                                                <p class="special-price">
+                                                    <span class="price-label">Special Price:</span>
+                                                    <span class="price">€49.00</span>
+                                                </p>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="product-image" href="#"><img src="http://www.manadev.com/media/catalog/product/cache/1/small_image/120x/9df78eab33525d08d6e5fb8d27136e95/i/-/i-shop-by-special-price.png" alt=""/></a>
+                                            <div class="stars">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <h3 class="product-name">
+                                                <a href="#">Shop by Special Price, Catalog Price Rules, New Arrivals, Attribute Option, Bestseller</a>
+                                            </h3>
+                                            <div class="price-box">
+                                                <span class="regular-price">
+                                                    <span class="price">€59.00</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <a class="btn-cart" href="#">Add to cart</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+<script>
+    $(document).ready(function() {
+        $('.skip-link').on('click', function() {
+            $(this).toggleClass('active').siblings().removeClass('active');
+            if($(this).hasClass('skip-nav')) $('.header_nav').toggleClass('active');
+            else $('.header_nav').removeClass('active');
+            if ($(this).hasClass('skip-search')) $('#search_mini_form').toggleClass('active');
+            else $('#search_mini_form').removeClass('active');
+        });
+
+        var nodeListOfLinks = $('.product-name a'); // returns NodeList
+        var arrayOfSlicedLinks = [];
+
+        for (var i = 0; i < nodeListOfLinks.length; i += 1) {
+            arrayOfSlicedLinks.push(nodeListOfLinks[i].innerHTML);
+        }
+
+        $.each(arrayOfSlicedLinks, function(index) {
+            var slicedLink = arrayOfSlicedLinks[index].slice(0, 60);
+            if (slicedLink.length < arrayOfSlicedLinks[index].length) {
+                slicedLink += '...';
+            }
+
+            nodeListOfLinks[index].innerHTML = slicedLink;
+        });
+    });
+</script>
+</body>
+</html>

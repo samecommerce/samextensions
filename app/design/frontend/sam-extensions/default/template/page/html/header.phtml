@@ -1,0 +1,114 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<header class="header-container">
+    <div class="header">
+        <div class="location">
+            <a class="home" href="#">
+                <span>Home</span>
+            </a>
+            <a class="store active" href="#">
+                <span>Store</span>
+            </a>
+        </div>
+        <a class="logo" href="#">
+            <img src="/skin/frontend/sam-extensions/sam-extensions/images/sam-logo.png" alt="Webinse Store" class="large">
+        </a>
+        <div class="quick-access">
+            <a class="skip-link skip-nav" href="#">
+                <span class="icon"></span>
+                <span class="label">Menu</span>
+            </a>
+            <a class="skip-link skip-search" href="#">
+                <span class="icon"></span>
+                <span class="label">Search</span>
+            </a>
+            <a class="skip-link skip-account" href="#">
+                <span class="icon"></span>
+                <span class="label">My account</span>
+            </a>
+            <a class="skip-link skip-checkout" href="#">
+                <span class="icon"></span>
+                <span class="label">Support</span>
+            </a>
+            <a class="skip-link skip-cart" href="#">
+                <span class="icon"></span>
+                <span class="label">My Cart</span>
+            </a>
+            <a class="skip-link skip-login" href="#">
+                <span class="icon"></span>
+                <span class="label">Log in</span>
+            </a>
+<!--	        <ul class="links">-->
+<!--		        <li class="first"><a href="#" title="My Account">My Account</a></li>-->
+<!--		        <li><a href="#" title="My Cart" class="top-link-cart">My Cart</a></li>-->
+<!--		        <li><a href="#" title="Checkout" class="top-link-checkout">Checkout</a></li>-->
+<!--		        <li class=" last"><a href="#" title="Log In">Log In</a></li>-->
+<!--	        </ul>-->
+            <?php echo $this->getChildHtml('store_language') ?>
+        </div>
+        <form id="search_mini_form" action="http://sam-extensions.com/index.php/catalogsearch/result/" method="get">
+            <div class="form-search">
+                <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" autocomplete="off" placeholder="Search entire store here...">
+                <button type="submit" title="Search" class="button"></button>
+                <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+                    searchForm.initAutocomplete('http://sam-extensions.com/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+                    //]]>
+                </script>
+            </div>
+        </form>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+</header>
+<nav class="header_nav">
+    <ul class="nav_in">
+        <li>
+            <a href="#">Back to SaM Ecommerce</a>
+        </li>
+        <li>
+            <a href="#">Magento Extensions</a>
+        </li>
+        <li>
+            <a href="#">Magento Development</a>
+        </li>
+        <li>
+            <a href="#">Magento Services</a>
+        </li>
+        <li>
+            <a href="#">Magento Support</a>
+        </li>
+        <li>
+            <a href="#">Magento Design</a>
+        </li>
+    </ul>
+</nav>
+<h1 class="header_title">Magento extensions you love for <span class="magento"></span> Magento Ecommerce Platform</h1>
