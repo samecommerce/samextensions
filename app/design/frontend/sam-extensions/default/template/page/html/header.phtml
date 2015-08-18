@@ -41,30 +41,8 @@
             <img src="/skin/frontend/sam-extensions/sam-extensions/images/sam-logo.png" alt="Webinse Store" class="large">
         </a>
         <div class="quick-access">
-            <a class="skip-link skip-nav" href="#">
-                <span class="icon"></span>
-                <span class="label">Menu</span>
-            </a>
-            <a class="skip-link skip-search" href="#">
-                <span class="icon"></span>
-                <span class="label">Search</span>
-            </a>
-            <a class="skip-link skip-account" href="#">
-                <span class="icon"></span>
-                <span class="label">My account</span>
-            </a>
-            <a class="skip-link skip-checkout" href="#">
-                <span class="icon"></span>
-                <span class="label">Support</span>
-            </a>
-            <a class="skip-link skip-cart" href="#">
-                <span class="icon"></span>
-                <span class="label">My Cart</span>
-            </a>
-            <a class="skip-link skip-login" href="#">
-                <span class="icon"></span>
-                <span class="label">Log in</span>
-            </a>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header_links')->toHtml(); ?>
+
 <!--	        <ul class="links">-->
 <!--		        <li class="first"><a href="#" title="My Account">My Account</a></li>-->
 <!--		        <li><a href="#" title="My Cart" class="top-link-cart">My Cart</a></li>-->
@@ -90,25 +68,6 @@
     </div>
 </header>
 <nav class="header_nav">
-    <ul class="nav_in">
-        <li>
-            <a href="#">Back to SaM Ecommerce</a>
-        </li>
-        <li>
-            <a href="#">Magento Extensions</a>
-        </li>
-        <li>
-            <a href="#">Magento Development</a>
-        </li>
-        <li>
-            <a href="#">Magento Services</a>
-        </li>
-        <li>
-            <a href="#">Magento Support</a>
-        </li>
-        <li>
-            <a href="#">Magento Design</a>
-        </li>
-    </ul>
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header_nav')->toHtml(); ?>
 </nav>
 <h1 class="header_title">Magento extensions you love for <span class="magento"></span> Magento Ecommerce Platform</h1>
